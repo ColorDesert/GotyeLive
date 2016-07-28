@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cloud"
+        android:layout_marginTop="20dip"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitCenter"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="60dip"
+        android:paddingRight="60dip">
+
+        <EditText
+            android:id="@+id/roomId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edit_login"
+            android:hint="房间ID"
+            android:textColor="@android:color/black"
+            android:maxLength="10"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_edit_login"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:maxLength="32"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_edit_login"
+            android:hint="昵称"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/main_login"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="登录"
+            android:textColor="@android:color/white" />
+
+        <ProgressBar
+            android:id="@+id/login_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="50dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_corners_bg"
+    android:paddingTop="10dip"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip"
+    android:paddingBottom="20dip"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:typeface="sans"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:text="分享到" />
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:id="@+id/shut"
+            android:layout_alignTop="@+id/title"
+            android:layout_alignBottom="@+id/title"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/share_close" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/wechatmoments"
+                android:src="@drawable/share_friend" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_marginTop="10dip"
+                android:typeface="sans"
+                android:text="微信朋友圈"
+
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="10dip"
+            android:layout_height="10dip"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/wechat"
+                android:src="@drawable/share_weixin" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:text="微信好友"
+                android:layout_marginTop="10dip"/>
+        </LinearLayout>
+        <View
+            android:layout_width="10dip"
+            android:layout_height="10dip"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sinaweibo"
+                android:src="@drawable/share_weibo" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:text="新浪微博"
+                android:layout_marginTop="10dip" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

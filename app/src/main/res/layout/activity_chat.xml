@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_player"
+    tools:context="lightly.im.gotyeio.com.imlightly.ChatActivity">
+
+    <RelativeLayout
+        android:id="@+id/surfaceViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/loadingView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/loadingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="25dip"
+        android:visibility="gone"
+        android:background="@android:color/holo_red_light"
+        android:textColor="@android:color/white" />
+
+   <com.gotye.live.demo.view.ChatRoom
+       android:layout_width="match_parent"
+       android:id="@+id/chatRoom"
+       android:visibility="gone"
+       android:layout_height="wrap_content"></com.gotye.live.demo.view.ChatRoom>
+
+</RelativeLayout>
